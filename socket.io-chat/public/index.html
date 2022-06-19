@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+
+  <link rel="stylesheet" href="css/chat.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"
+    integrity="sha512-9mpsATI0KClwt+xVZfbcf2lJ8IFBAwsubJ6mI3rtULwyM3fBmQFzj0It4tGqxLOGQwGfJdk/G+fANnxfq9/cew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="chat">
+    <div>
+      <div class="chatbox__support">
+        <div class="chatbox__header">
+          Chat
+        </div>
+        <div id="chat-window" class="chatbox__messages">
+          <div>
+            <div id="output" class="messages__item messages__item--visitor">
+  
+            </div>
+            <p id="feedback"></p>
+          </div>
+        </div>
+        <div class="chatbox__footer">
+          <input type="text" name="name" id="sender" placeholder="Write a name">
+          <input type="text" id="message" name="message" placeholder="Write a message">
+          <button type="submit" id="submitBtn">Send<button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+
+</html>
